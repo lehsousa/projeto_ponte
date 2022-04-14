@@ -1,0 +1,233 @@
+.container {
+    max-width: min(90vw, 1600px);
+    margin: auto;
+}
+
+.cabecalho {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.cabecalho img {
+    width: 10%;
+}
+
+.bg {
+    background: linear-gradient(-180deg, #1fa74b, yellow, #1f62af, red);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu__lista {
+    display: flex;
+}
+
+.menu__item {
+    list-style: none;
+}
+
+.menu__item a {
+    margin-right: 1.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    position: relative;
+}
+
+.menu__item a:hover {
+    color: azure;
+}
+
+.menu__item a::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: width 0.4s;
+}
+
+.menu__item a:hover::after {
+    width: 100%;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide img {
+    display: flex;
+    margin: auto;
+    width: 90%;
+}
+
+.frase {
+    display: flex;
+    flex-direction: column;
+    margin: 15rem 2rem;
+}
+
+.frase-descricao {
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    text-shadow: 5px 5px 5px gray;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+.sobre h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.sobre p {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem;
+}
+
+button {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: yellow;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1.5px solid black;
+    cursor: pointer;
+    width: 20%;
+    transition: all .5s ease-in-out;
+}
+
+button:hover {
+    background: black;
+    color: yellow;
+}
+
+.parceiros {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+.parceiros h2 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.parceria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.parceria a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.parceria img {
+    width: 50%;
+    height: auto;
+    margin-top: 4rem;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 4rem 2rem;
+}
+
+.contato h3 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+.contato-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.endereco {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.endereco p {
+    font-size: 1.3rem;
+    line-height: .2;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social a {
+    margin: 0 1rem;
+    transition: all .3s ease-in-out;
+    position: relative;
+    display: block;
+    transition: .5s;
+}
+
+.social a img:before {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    transform: scale(0.9);
+    transition: .5s;
+}
+
+.social a img:hover::before {
+    filter: blur(1px);
+    transform: scale(1.2);
+    box-shadow: 0 0 10px black;
+}
+
+.social a img:hover {
+    box-shadow: 0 0 10px black;
+    text-shadow: 0 0 10px black;
+}
